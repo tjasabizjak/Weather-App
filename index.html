@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <!-- https://www.youtube.com/watch?v=MIYQR-Ybrn4&t=1359s -->
+  <body>
+    <div class="App">
+      <div class="App-body">
+        <div class="card">
+          <div>
+            <div class="top-part">
+              <input
+                class="location"
+                type="text"
+                placeholder="enter city"
+                spellcheck="false"
+              />
+              <button><img src="images/loop2.jpg" class="loop-img" /></button>
+            </div>
+            <div class="invalid"><p>Invalid city name!</p></div>
+            <div class="weather-info">
+              <img src="images/weather.jpg" class="weather" />
+              <h1 class="temp">27°C</h1>
+              <h2 class="city">Ljubljana</h2>
+              <div class="bottom-part">
+                <div class="bottom-left">
+                  <img src="images/humidity.png" class="humidity" />
+                  <div class="bottom-left-info">
+                    <h3 class="humid">31%</h3>
+                    <p>Humidity</p>
+                  </div>
+                </div>
+                <div class="bottom-right">
+                  <img src="images/wind.png" class="wind" />
+                  <div class="bottom-right-info">
+                    <h3 class="windy">4.63 km/h</h3>
+                    <p>Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
